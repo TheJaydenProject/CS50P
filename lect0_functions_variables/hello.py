@@ -4,12 +4,26 @@ print('Hello, world!')
 # Ask user for their name
 name = input('whats your name? ') # Input function expects a string
 
+# Remove whitespace from str (only from left and right not in between)
+name = name.strip()
+
+# Capitalize User Name (first letter)
+name = name.capitalize()
+
+# Remove whitespace from str and Capitalize User name (every first letter of a new word)
+name = name.strip().title()
+
+# Can combine with the input if needed
+name = input('whats your name? ').strip().title()
+
 # Say hello to the user
 print('Hello, ' + name)
 
 # Another way to format strings
 print('Hello,', name)
-print(f'Hello, {name}')
+
+# Most Standard way
+print(f'hello, {name}')
 
 # Print Doc
 # print(*objects, sep=' ', end='\n', file=None, flush=False)
@@ -30,4 +44,7 @@ print(name)
 # Putting Quotes in quotes of Print function
 # Use different quotes to seperate
 print("Hello, 'friend'")
+# Or use back slash
+print('Hello, \'friend\'')
+
 
